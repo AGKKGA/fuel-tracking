@@ -2,6 +2,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import TopBar from '@/components/TopBar';
 import GeekMode from '@/components/GeekMode';
+import AdCard from '@/components/AdCard';
 import { FuelPrice, Region, FuelType } from '@/lib/types';
 import { ChevronUp, ChevronDown, BarChart2, Filter, Search, Globe } from 'lucide-react';
 
@@ -79,6 +80,9 @@ export default function Dashboard() {
             </div>
           )}
         </div>
+
+        {/* Ad Slot */}
+        <AdCard slot="1234567890" className="mb-8" />
 
         {/* Filters Panel */}
         <div className="bg-zinc-900/40 p-4 rounded-xl border border-zinc-800 mb-8 flex flex-wrap gap-4 items-center justify-between">
